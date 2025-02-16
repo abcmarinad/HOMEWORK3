@@ -1,0 +1,72 @@
+*{ box-sizing: border-box;}
+
+@font-face {
+font-family: "CarlaSansLight";
+src: url("../fonts/CarlaSansLight.ttf") format("truetype");
+font-style: Light;
+font-weight: Light;
+}
+
+p{ font-family: 'CarlaSansLight'; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lightblue;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.glassmorphism:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.neomorphism {
+    background: #e0e0e0;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    box-shadow: 8px 8px 16px #b8b8b8, -8px -8px 16px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.neomorphism:active {
+    box-shadow: inset 6px 6px 12px #b8b8b8, inset -6px -6px 12px #ffffff;
+}
+
+.clickbox {
+    background-color: lightsteelblue;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 1vw;
+}
+
+.clickbox:hover {
+    transform: scale(1.05);
+}
