@@ -1,18 +1,23 @@
-let box = document.querySelectorAll(".clickbox");
+document.addEventListener("DOMContentLoaded", function () {
 
-box.forEach(function(clickbox){
-    clickbox.addEventListener("click", function(){
-        if(clickbox.style.backgroundColor === "lightsteelblue"){
-            clickbox.style.backgroundColor = "yellow";
-            clickbox.classList.add('yellow'); // Добавляем класс .yellow
-            console.log("change color");
-        }
-        else{
-            clickbox.style.backgroundColor = "lightsteelblue";
-            clickbox.classList.remove('yellow'); // Удаляем класс .yellow
+    let box = document.querySelector(".clickbox");
+
+    box.addEventListener("click", function() {
+        if (box.style.backgroundColor === "lightsteelblue") {
+            box.style.backgroundColor = "yellow";
+            box.style.margin = '2vw';
+            console.log("Цвет изменён на жёлтый");
+        } else {
+            box.style.backgroundColor = "lightsteelblue";
+            box.style.margin = '1vw';
         }
     });
+
 });
+
+
+
+
 
 
 
